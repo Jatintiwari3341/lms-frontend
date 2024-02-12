@@ -37,7 +37,7 @@ npm run dev
 1.install tailwind css
 
 ```
-npm install -D tailwindcss
+npm install -D tailwindcss postcss autoprefixer
 
 ```
 2.Create tailwind config file
@@ -48,7 +48,7 @@ npx tailwindcss init
 ```
 3.Add file extension to tailwind config file
 ```
-"./src/**/*.{html,js,jsx,ts,tsx}"
+"./src/**/*.{html,js,jsx,ts,tsx}","./index.html",
 
 ```
 4.Add the tailwind directives at the top of the `index.css` file
@@ -74,7 +74,7 @@ npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-char
  ```
  3.add simple-import sort plugin in`.eslint.cjs`
  ```
-lugins: ['....,'simple-import-sort']
+plugins: ['....,'simple-import-sort']
  ```
 
  4.To enable auto import sort on file save in vscode
